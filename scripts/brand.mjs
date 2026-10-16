@@ -59,6 +59,10 @@ const CHECKS = [
     .filter((p) => /\.(ts|tsx)$/.test(p) && !p.includes('__tests__') && !p.includes('__stories__'))
     .filter((p) => /twenty\.com\/(terms|legal|\$\{language\}\/privacy)|trident-ai\.dev\/(terms|privacy)\.html/.test(readFileSync(p, 'utf8')))
     .map((p) => p.replace(ROOT, ''))],
+  ['email components reference Twenty', () => walk(join(ROOT, 'packages/twenty-emails/src'))
+    .filter((p) => /\.(ts|tsx)$/.test(p) && !p.includes('locales'))
+    .filter((p) => /twenty-logo|twentyhq|twenty\.com(?!\/developers)/.test(readFileSync(p, 'utf8')))
+    .map((p) => p.replace(ROOT, ''))],
 ];
 
 const mode = process.argv[2];

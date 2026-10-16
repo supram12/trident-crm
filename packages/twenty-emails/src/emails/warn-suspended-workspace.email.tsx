@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/react';
 import { BaseEmail } from 'src/components/BaseEmail';
+import { EMAIL_BASE_URL } from 'src/constants/DefaultWorkspaceLogo';
 import { CallToAction } from 'src/components/CallToAction';
 import { MainText } from 'src/components/MainText';
 import { Title } from 'src/components/Title';
@@ -57,7 +58,7 @@ export const WarnSuspendedWorkspaceEmail = ({
       </MainText>
       <br />
       <CallToAction
-        href="https://app.twenty.com/settings/billing"
+        href={`${EMAIL_BASE_URL}/settings/billing`}
         value={i18n._('Update your subscription')}
       />
       <br />

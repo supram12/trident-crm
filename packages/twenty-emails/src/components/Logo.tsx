@@ -1,5 +1,7 @@
 import { Img } from '@react-email/components';
 
+import { EMAIL_BASE_URL } from 'src/constants/DefaultWorkspaceLogo';
+
 const logoStyle = {
   marginBottom: '40px',
 };
@@ -7,10 +9,10 @@ const logoStyle = {
 export const Logo = () => {
   return (
     <Img
-      src="https://app.twenty.com/images/icons/windows11/Square150x150Logo.scale-100.png"
-      alt="Twenty logo"
-      width="40"
-      height="40"
+      src={`${EMAIL_BASE_URL}/images/trident/email-logo.png`}
+      alt="Trident CRM"
+      width="160"
+      height="150"
       style={logoStyle}
     />
   );

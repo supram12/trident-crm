@@ -41,3 +41,12 @@ By-name side effects (accepted): `theme.color[name]` lookups resolve "blue" to t
 Dark greys lifted to reach 4.5:1 on every wine surface: `--t-font-color-tertiary` 0.506 → 0.6 (`#999999`), `--t-font-color-light` 0.4 → 0.541 (`#8A8A8A`). Light-theme greys are upstream.
 
 Not changed: font colours other than the two dark greys, grey scale, tags, red/green/orange families.
+
+## Email templates
+
+| What | Value |
+|---|---|
+| Logo | `packages/twenty-front/public/images/trident/email-logo.png`, 320x300 opaque PNG, shown at 160x150. Made by `scripts/make-email-logo.mjs`: the unmodified lockup, centred on a flat `#1C0B12` band (the lockup's wordmark is near-white, so it needs a dark ground). |
+| Logo URL | `${SERVER_URL}/images/trident/email-logo.png`. `EMAIL_BASE_URL` in `twenty-emails/src/constants/DefaultWorkspaceLogo.ts` reads `process.env.SERVER_URL` (fallback `https://crm.trident-ai.dev`, preview tool only). |
+| Footer | One link, Website -> `https://trident-ai.dev`. Text "Trident CRM by Trident AI" comes from the catalog msgstr (`brand.mjs apply`); the upstream msgid stays as the lookup key. Github / User guide / Developers links and the "San Francisco / Paris" line are removed. |
+| Default workspace logo in emails | The A3 192px app icon on `SERVER_URL`. |

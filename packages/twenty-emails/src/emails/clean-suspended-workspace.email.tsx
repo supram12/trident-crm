@@ -1,5 +1,6 @@
 import { Trans } from '@lingui/react';
 import { BaseEmail } from 'src/components/BaseEmail';
+import { EMAIL_BASE_URL } from 'src/constants/DefaultWorkspaceLogo';
 import { CallToAction } from 'src/components/CallToAction';
 import { MainText } from 'src/components/MainText';
 import { Title } from 'src/components/Title';
@@ -46,7 +47,7 @@ export const CleanSuspendedWorkspaceEmail = ({
       </MainText>
       <br />
       <CallToAction
-        href="https://app.twenty.com/"
+        href={`${EMAIL_BASE_URL}/`}
         value={i18n._('Create a new workspace')}
       />
       <br />
