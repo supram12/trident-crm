@@ -46,6 +46,7 @@ any data exists: a region move migrates the volumes.
 | `PG_DATABASE_URL` | `${{Postgres.DATABASE_URL}}` |
 | `REDIS_URL` | `${{Redis.REDIS_URL}}` |
 | `NODE_PORT` | `3000` |
+| `PORT` | `3000` (server only). `railway domain --port` didn't save a target port on CLI 4.40, so the proxy used Railway's default port and every request got a 4 ms 502 |
 | `STORAGE_TYPE` | `s3` |
 | `STORAGE_S3_NAME` / `_ENDPOINT` | from bucket credentials (`https://t3.storageapi.dev`) |
 | `STORAGE_S3_REGION` | `eu-west-1` (Twenty rejects the bucket's `auto`; any valid region signs fine) |
