@@ -8,6 +8,7 @@ permissions:
   packages: write
 jobs:
   build:
+    if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,6 +22,11 @@ jobs:
         with:
           context: .
           file: packages/twenty-docker/twenty/Dockerfile
+          target: twenty
+          build-args: APP_VERSION=2.9.0
+          labels: |
+            org.opencontainers.image.source=https://github.com/supram12/trident-crm
+            org.opencontainers.image.description=Trident CRM (fork of Twenty, AGPLv3)
           platforms: linux/amd64
           push: true
           tags: |

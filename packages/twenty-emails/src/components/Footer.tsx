@@ -24,6 +24,14 @@ export const Footer = ({ i18n }: FooterProps) => {
             />
           </ShadowText>
         </Column>
+        <Column>
+          <ShadowText>
+            <Link
+              href="https://github.com/supram12/trident-crm"
+              value={i18n._('Source code')}
+            />
+          </ShadowText>
+        </Column>
       </Row>
       <ShadowText>
         {i18n._('Twenty.com, Public Benefit Corporation')}

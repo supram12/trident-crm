@@ -79,7 +79,14 @@ export const FooterNote = () => {
         >
           <Trans>Privacy Policy</Trans>
         </a>
-        .
+        .{' '}
+        <a
+          href="https://github.com/supram12/trident-crm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Trans>Source code</Trans>
+        </a>
       </StyledCopyContainer>
     );
   }
@@ -108,6 +115,14 @@ export const FooterNote = () => {
         rel="noopener noreferrer"
       >
         <Trans>Terms of Service</Trans>
+      </a>
+      <StyledSeparator>•</StyledSeparator>
+      <a
+        href="https://github.com/supram12/trident-crm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Trans>Source code</Trans>
       </a>
     </StyledLinksContainer>
   );

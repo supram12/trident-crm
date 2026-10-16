@@ -63,6 +63,16 @@ const CHECKS = [
     .filter((p) => /\.(ts|tsx)$/.test(p) && !p.includes('locales'))
     .filter((p) => /twenty-logo|twentyhq|twenty\.com(?!\/developers)/.test(readFileSync(p, 'utf8')))
     .map((p) => p.replace(ROOT, ''))],
+  // AGPL s13: the UI and emails must link to this fork's source.
+  ['source-code link present', () => ['packages/twenty-front/src/modules/auth/sign-in-up/components/FooterNote.tsx',
+    'packages/twenty-emails/src/components/Footer.tsx']
+    .filter((p) => !readFileSync(join(ROOT, p), 'utf8').includes('github.com/supram12/trident-crm'))],
+  ['hard-coded "Twenty" string literal', () => walk(join(ROOT, 'packages/twenty-front/src'))
+    .filter((p) => /\.(ts|tsx)$/.test(p) && !/__tests__|\.test\.|\.stories\.|__mocks__|\/mock|locales|\/testing\//.test(p))
+    // apollo.factory.ts: 'Twenty' is the devtools logger name, not user-visible.
+    .filter((p) => !p.endsWith('modules/apollo/services/apollo.factory.ts'))
+    .filter((p) => /(['"])Twenty\1/.test(readFileSync(p, 'utf8')))
+    .map((p) => p.replace(ROOT, ''))],
 ];
 
 const mode = process.argv[2];
