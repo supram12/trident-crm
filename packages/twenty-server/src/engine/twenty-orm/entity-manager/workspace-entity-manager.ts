@@ -1302,7 +1302,13 @@ export class WorkspaceEntityManager extends EntityManager {
       const updatedEntities = formattedResult
         .filter((entity) => beforeUpdateMapById[entity.id])
         .map(
-          (entity) => ({ ...beforeUpdateMapById[entity.id], ...entity }) as Entity,
+          (entity) =>
+            ({
+              ...beforeUpdateMapById[entity.id],
+              ...Object.fromEntries(
+                Object.entries(entity).filter(([, v]) => v !== undefined),
+              ),
+            }) as Entity,
         );
       const createdEntities = formattedResult.filter(
         (entity) => !beforeUpdateMapById[entity.id],
