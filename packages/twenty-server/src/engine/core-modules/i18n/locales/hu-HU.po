@@ -3889,7 +3889,7 @@ msgstr ""
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Csatlakozzon a csapatához a Twentyn"
+msgstr "Csatlakozzon a csapatához a Trident CRMn"
 
 #. js-lingui-id: AQuLwi
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-version-standard-flat-field-metadata.util.ts

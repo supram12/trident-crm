@@ -15395,7 +15395,7 @@ msgstr "Synkronoi Outlookin kanssa"
 #. js-lingui-id: +9x4tK
 #: src/pages/onboarding/SyncEmails.tsx
 msgid "Sync your Emails and Calendar with Twenty. Choose your privacy settings."
-msgstr "Synkronoi sähköpostisi ja kalenterisi Twentyyn. Valitse tietosuoja-asetuksesi."
+msgstr "Synkronoi sähköpostisi ja kalenterisi Trident CRMyn. Valitse tietosuoja-asetuksesi."
 
 #. js-lingui-id: N2FcBE
 #: src/modules/settings/accounts/components/SettingsAccountsConnectedAccountsRowRightContainer.tsx
@@ -17695,7 +17695,7 @@ msgstr ""
 #. js-lingui-id: nTuObL
 #: src/pages/auth/SignInUp.tsx
 msgid "Welcome to Twenty"
-msgstr "Tervetuloa Twentyyn"
+msgstr "Tervetuloa Trident CRMyn"
 
 #. js-lingui-id: t8ZvkC
 #: src/pages/auth/SignInUp.tsx

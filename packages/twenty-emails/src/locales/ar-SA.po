@@ -231,7 +231,7 @@ msgstr "قم بزيارة وثائق المطورين لـTrident CRM"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Trident CRM.com، مؤسسة لنشر الفائدة العامة"
+msgstr "Trident CRM by Trident AI"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

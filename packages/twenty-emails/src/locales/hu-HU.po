@@ -76,7 +76,7 @@ msgstr "Teszt e-mail"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Csatlakozzon a csapatához a Twentyn"
+msgstr "Csatlakozzon a csapatához a Trident CRMn"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -126,7 +126,7 @@ msgstr "Amennyiben Ön nem kezdeményezte ezt a változtatást, kérjük azonnal
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Csatlakozás a Twentyhez"
+msgstr "Csatlakozás a Trident CRMhez"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -231,7 +231,7 @@ msgstr "Látogasson el a Trident CRM fejlesztői dokumentációjához"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Trident CRM.com, Közhasznú Vállalat"
+msgstr "Trident CRM by Trident AI"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

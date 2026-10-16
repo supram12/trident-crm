@@ -231,7 +231,7 @@ msgstr "Επισκεφτείτε την τεκμηρίωση για προγρα
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Trident CRM.com, Δημόσια Οφέλη Εταιρεία"
+msgstr "Trident CRM by Trident AI"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

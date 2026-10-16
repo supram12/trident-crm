@@ -196,7 +196,7 @@ msgstr "Webbplats"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Besök Twentys webbplats"
+msgstr "Besök Trident CRMs webbplats"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -206,7 +206,7 @@ msgstr "Github"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Besök Twentys GitHub-repositorium"
+msgstr "Besök Trident CRMs GitHub-repositorium"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -216,7 +216,7 @@ msgstr "Användarguide"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Läs Twentys användarguide"
+msgstr "Läs Trident CRMs användarguide"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -226,12 +226,12 @@ msgstr "Utvecklare"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Besök Twentys utvecklardokumentation"
+msgstr "Besök Trident CRMs utvecklardokumentation"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Trident CRM.com, Public Benefit Corporation"
+msgstr "Trident CRM by Trident AI"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

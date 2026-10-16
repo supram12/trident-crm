@@ -26,7 +26,10 @@ export const rebrandPo = (src) => {
     else if (line.startsWith('msgstr')) field = 'str';
     else if (!line.startsWith('"')) field = null;
     if (field !== 'str') return line;
-    return line.replace(/Twenty CRM/g, 'Trident CRM').replace(/\bTwenty\b/g, 'Trident CRM');
+    // Email footer "Twenty.com, <legal form>" (any locale) is a fake domain + false legal claim.
+    if (/^msgstr "(Twenty|Trident CRM)\.com[,\uFF0C\u060C]/.test(line)) return 'msgstr "Trident CRM by Trident AI"';
+    // No trailing \b: catches suffixed forms (Twentys, Twentyyn, Twentyben). Leading \b spares "plenty"-style words.
+    return line.replace(/\b(Twenty|Trident CRM)\.com/g, 'Trident CRM').replace(/Twenty CRM/g, 'Trident CRM').replace(/\bTwenty/g, 'Trident CRM');
   }).join('\n');
 };
 

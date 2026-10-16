@@ -76,7 +76,7 @@ msgstr "Testisähköposti"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Liity tiimiisi Twentyssä"
+msgstr "Liity tiimiisi Trident CRMssä"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -196,7 +196,7 @@ msgstr "Verkkosivusto"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Vieraile Twentyn verkkosivustolla"
+msgstr "Vieraile Trident CRMn verkkosivustolla"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -206,7 +206,7 @@ msgstr "Github"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Vieraile Twentyn GitHub-repositoriossa"
+msgstr "Vieraile Trident CRMn GitHub-repositoriossa"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -216,7 +216,7 @@ msgstr "Käyttäjäopas"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Lue Twentyn käyttäjäopas"
+msgstr "Lue Trident CRMn käyttäjäopas"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -226,12 +226,12 @@ msgstr "Kehittäjät"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Tutustu Twentyn kehittäjädokumentaatioon"
+msgstr "Tutustu Trident CRMn kehittäjädokumentaatioon"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Trident CRM.com, yleishyödyllinen yhtiö"
+msgstr "Trident CRM by Trident AI"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
