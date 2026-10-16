@@ -12,7 +12,23 @@ Re-verify after every upstream merge: `node scripts/brand.mjs apply && node scri
 | Default workspace logo | `packages/twenty-front/src/modules/ui/navigation/navigation-drawer/constants/DefaultWorkspaceLogo.ts` | points at the 192px Trident icon |
 | Terms and privacy links | `packages/twenty-front/src/modules/auth/sign-in-up/components/FooterNote.tsx` | `trident-ai.dev/terms` and `/privacy` (no `.html`: it 301-redirects) |
 | Social-card meta | `packages/twenty-front/index.html` | og:image and twitter:image removed (they pointed at the Twenty card); `brand.mjs check` fails on any `twentyhq` or `twenty.com` in the file |
+| Theme colours (accent + dark surfaces) | `packages/twenty-ui/src/theme-constants/theme-light.css`, `theme-dark.css` (+ tracked copies in `packages/twenty-ui/dist/`) | edited by hand; see below |
+| Dark loading background | `packages/twenty-front/index.html` | `--theme-dark-background-tertiary: #2e1420` (mirrors dark background tertiary) |
 
 `packages/twenty-website` catalogs are deliberately not rebranded: that package is not deployed.
 
 The email footer msgid "Twenty.com, Public Benefit Corporation" is mapped to "Trident CRM by Trident AI" in every locale (a `Twenty.com` domain or PBC claim would be false); any other `Twenty.com` becomes plain "Trident CRM".
+
+## Theme colours
+
+The app reads colours from the CSS variables in `packages/twenty-ui/src/theme-constants/theme-*.css` (`ThemeProvider` computes the JS theme from them). The TS constants in `src/theme/constants/` are not read at runtime and are left as upstream. The vite build copies the CSS into `dist/`. If an upstream merge rewrites these CSS files, re-apply the values below. Palette source: `brand_assets/brand_board.html`.
+
+Light accent (wine, OKLCH ramp at the hue of `#381927`, chroma never above the wine's own): 1 `#FFFCFD` 2 `#FDF7FA` 3 `#F9EFF3` 4 `#F4E5EA` 5 `#ECD8E0` 6 `#E3CAD3` 7 `#D5B6C2` 8 `#C29CAB` 9 `#381927` 10 `#2E1420` 11 `#5E3C4A` 12 `#26101A`.
+
+Dark accent (gold; steps 1–8 are `#D4AF37` laid over `#1C0B12` at 3/6/10/15/20/27/36/50%): 1 `#221013` 2 `#271514` 3 `#2E1B16` 4 `#382418` 5 `#412C19` 6 `#4E371C` 7 `#5E461F` 8 `#785D25` 9 `#D4AF37` 10 `#B8912A` 11 `#F5D07E` 12 `#F9EDD5`.
+
+Accent aliases follow Twenty's own mapping in both themes: primary/secondary = step 5, tertiary = 3, quaternary = 2, accent3570/accent4060 = 8.
+
+Dark surfaces: background primary `#1C0B12`, secondary `#26101A`, tertiary `#2E1420`, quaternary `#381927`.
+
+Not changed: the `color.blue*` family (primary buttons, focus borders, filter-chip text), font colours, grey scale, tags. Primary buttons therefore stay Twenty blue until that is decided separately.
