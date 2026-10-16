@@ -50,3 +50,11 @@ Not changed: font colours other than the two dark greys, grey scale, tags, red/g
 | Logo URL | `${SERVER_URL}/images/trident/email-logo.png`. `EMAIL_BASE_URL` in `twenty-emails/src/constants/DefaultWorkspaceLogo.ts` reads `process.env.SERVER_URL` (fallback `https://crm.trident-ai.dev`, preview tool only). |
 | Footer | One link, Website -> `https://trident-ai.dev`. Text "Trident CRM by Trident AI" comes from the catalog msgstr (`brand.mjs apply`); the upstream msgid stays as the lookup key. Github / User guide / Developers links and the "San Francisco / Paris" line are removed. |
 | Default workspace logo in emails | The A3 192px app icon on `SERVER_URL`. |
+
+## CI
+
+| What | Value |
+|---|---|
+| Upstream workflows | Upstream CI workflows disabled on GitHub with `gh workflow disable` (not moved — keeps upstream merges clean). Re-run the disable after any upstream merge that adds a workflow. |
+| Image build | `.github/workflows/trident-image.yml` builds `ghcr.io/supram12/trident-crm:<tag>` and `:latest` on tags `v*-trident.*`. |
+| Dependabot | `.github/dependabot.yml` deleted. Trident CRM tracks upstream release tags only; dependency bumps arrive via upstream merges. |
