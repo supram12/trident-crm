@@ -528,7 +528,6 @@ msgstr "Ett oväntat konfigurationsfel inträffade."
 #: src/engine/metadata-modules/view/filters/view-rest-api-exception.filter.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate.exception.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate-group.exception.ts
-#: src/engine/core-entity-cache/exceptions/core-entity-cache.exception.ts
 msgid "An unexpected error occurred."
 msgstr "Ett oväntat fel inträffade."
 
@@ -877,11 +876,6 @@ msgstr "Faktureringspris hittades inte."
 #: src/engine/core-modules/billing/billing.exception.ts
 msgid "Billing product not found."
 msgstr "Faktureringsprodukt hittades inte."
-
-#. js-lingui-id: Je6GWV
-#: src/engine/workspace-manager/workspace-cleaner/exceptions/workspace-cleaner.exception.ts
-msgid "Billing subscription not found."
-msgstr "Faktureringsprenumeration hittades inte."
 
 #. js-lingui-id: K1172m
 #: src/engine/workspace-manager/twenty-standard-application/utils/object-metadata/create-standard-flat-object-metadata.util.ts
@@ -3463,7 +3457,6 @@ msgstr "Ogiltiga data för sidlayoutwidget."
 
 #. js-lingui-id: HiaWGB
 #: src/engine/workspace-cache/exceptions/workspace-cache.exception.ts
-#: src/engine/core-entity-cache/exceptions/core-entity-cache.exception.ts
 msgid "Invalid parameters provided."
 msgstr "Ogiltiga parametrar angavs."
 
@@ -7672,11 +7665,6 @@ msgstr ""
 msgid "View already exists"
 msgstr "Vyn finns redan"
 
-#. js-lingui-id: kB0dDD
-#: src/engine/metadata-modules/view/exceptions/flat-view.exception.ts
-msgid "View already exists."
-msgstr "Vyn finns redan."
-
 #. js-lingui-id: pTvQqf
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-view-field-validator.service.ts
 msgid "View field already exists"
@@ -7921,11 +7909,6 @@ msgstr "Vyn hittades inte efter upsert"
 #: src/engine/metadata-modules/view/services/view-widget-upsert.service.ts
 msgid "View not found for widget"
 msgstr ""
-
-#. js-lingui-id: yheEin
-#: src/engine/metadata-modules/view/exceptions/flat-view.exception.ts
-msgid "View not found."
-msgstr "Vy hittades inte."
 
 #. js-lingui-id: ipFNcM
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-view-sort-validator.service.ts

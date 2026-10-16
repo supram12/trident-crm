@@ -523,7 +523,6 @@ msgstr ""
 #: src/engine/metadata-modules/view/filters/view-rest-api-exception.filter.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate.exception.ts
 #: src/engine/metadata-modules/row-level-permission-predicate/exceptions/row-level-permission-predicate-group.exception.ts
-#: src/engine/core-entity-cache/exceptions/core-entity-cache.exception.ts
 msgid "An unexpected error occurred."
 msgstr ""
 
@@ -871,11 +870,6 @@ msgstr ""
 #. js-lingui-id: DDKhmc
 #: src/engine/core-modules/billing/billing.exception.ts
 msgid "Billing product not found."
-msgstr ""
-
-#. js-lingui-id: Je6GWV
-#: src/engine/workspace-manager/workspace-cleaner/exceptions/workspace-cleaner.exception.ts
-msgid "Billing subscription not found."
 msgstr ""
 
 #. js-lingui-id: K1172m
@@ -3458,7 +3452,6 @@ msgstr ""
 
 #. js-lingui-id: HiaWGB
 #: src/engine/workspace-cache/exceptions/workspace-cache.exception.ts
-#: src/engine/core-entity-cache/exceptions/core-entity-cache.exception.ts
 msgid "Invalid parameters provided."
 msgstr ""
 
@@ -7661,11 +7654,6 @@ msgstr ""
 msgid "View already exists"
 msgstr ""
 
-#. js-lingui-id: kB0dDD
-#: src/engine/metadata-modules/view/exceptions/flat-view.exception.ts
-msgid "View already exists."
-msgstr ""
-
 #. js-lingui-id: pTvQqf
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-view-field-validator.service.ts
 msgid "View field already exists"
@@ -7909,11 +7897,6 @@ msgstr ""
 #. js-lingui-id: RAcTQ1
 #: src/engine/metadata-modules/view/services/view-widget-upsert.service.ts
 msgid "View not found for widget"
-msgstr ""
-
-#. js-lingui-id: yheEin
-#: src/engine/metadata-modules/view/exceptions/flat-view.exception.ts
-msgid "View not found."
 msgstr ""
 
 #. js-lingui-id: ipFNcM
