@@ -18,7 +18,9 @@ const StyledNotificationCounter = styled.div<{
       ? themeCssVariables.color.blue
       : themeCssVariables.background.transparent.light};
   color: ${({ variant }) =>
-    variant === 'primary' ? 'white' : themeCssVariables.font.color.secondary};
+    variant === 'primary'
+      ? themeCssVariables.font.color.inverted
+      : themeCssVariables.font.color.secondary};
 `;
 
 type NotificationCounterProps = {
