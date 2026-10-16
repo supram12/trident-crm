@@ -1296,9 +1296,14 @@ export class WorkspaceEntityManager extends EntityManager {
         this.internalContext.flatFieldMetadataMaps,
       );
 
-      const updatedEntities = formattedResult.filter(
-        (entity) => beforeUpdateMapById[entity.id],
-      );
+      // save() receives a partial; merge it over the stored row so the UPDATED
+      // event's `after` is complete (listeners read fields the save didn't touch,
+      // e.g. the avatar listener deleted the picture on every settings change).
+      const updatedEntities = formattedResult
+        .filter((entity) => beforeUpdateMapById[entity.id])
+        .map(
+          (entity) => ({ ...beforeUpdateMapById[entity.id], ...entity }) as Entity,
+        );
       const createdEntities = formattedResult.filter(
         (entity) => !beforeUpdateMapById[entity.id],
       );

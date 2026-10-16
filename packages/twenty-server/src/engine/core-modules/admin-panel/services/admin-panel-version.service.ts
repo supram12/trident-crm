@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 import semver from 'semver';
+import { isDefined } from 'twenty-shared/utils';
 import * as z from 'zod';
 
 import { type VersionInfoDTO } from 'src/engine/core-modules/admin-panel/dtos/version-info.dto';
@@ -16,6 +17,11 @@ export class AdminPanelVersionService {
 
   async getVersionInfo(): Promise<VersionInfoDTO> {
     const currentVersion = this.twentyConfigService.get('APP_VERSION');
+
+    // Trident CRM ships its own image; upstream's Docker Hub tags are not our releases.
+    if (isDefined(currentVersion)) {
+      return { currentVersion, latestVersion: currentVersion };
+    }
 
     try {
       const httpClient = this.secureHttpClientService.getHttpClient();

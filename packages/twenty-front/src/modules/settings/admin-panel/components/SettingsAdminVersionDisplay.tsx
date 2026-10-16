@@ -44,7 +44,7 @@ export const SettingsAdminVersionDisplay = ({
 
   return (
     <StyledActionLink
-      href={`https://hub.docker.com/r/twentycrm/twenty/tags?name=${version}`}
+      href={`https://github.com/supram12/trident-crm/releases`}
       target="_blank"
       rel="noreferrer"
     >

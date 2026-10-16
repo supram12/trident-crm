@@ -1,11 +1,4 @@
 import { Trans, useLingui } from '@lingui/react/macro';
-import { lazy, Suspense } from 'react';
-
-const BackgroundMockPage = lazy(() =>
-  import('@/sign-in-background-mock/components/BackgroundMockPage').then(
-    (module) => ({ default: module.BackgroundMockPage }),
-  ),
-);
 import { AppPath } from 'twenty-shared/types';
 
 import { RootStackingContextZIndices } from '@/ui/layout/constants/RootStackingContextZIndices';
@@ -68,9 +61,6 @@ export const NotFound = () => {
           </StyledButtonContainer>
         </AnimatedPlaceholderErrorContainer>
       </StyledBackDrop>
-      <Suspense fallback={null}>
-        <BackgroundMockPage />
-      </Suspense>
     </>
   );
 };
