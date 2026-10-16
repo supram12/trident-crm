@@ -129,7 +129,7 @@ const computeButtonDynamicStyles = (
                 }`
               : 'none';
           result.color = !inverted
-            ? GRAY_SCALE_LIGHT.gray1
+            ? themeCssVariables.font.color.inverted
             : themeCssVariables.color.blue;
           if (!disabled) {
             result.hoverBackground = !inverted
@@ -417,7 +417,7 @@ const computeButtonWrapperColor = (
             : themeCssVariables.font.color.secondary;
         case 'blue':
           return !inverted
-            ? GRAY_SCALE_LIGHT.gray1
+            ? themeCssVariables.font.color.inverted
             : themeCssVariables.color.blue;
         case 'danger':
           return !inverted

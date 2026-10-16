@@ -12,7 +12,8 @@ Re-verify after every upstream merge: `node scripts/brand.mjs apply && node scri
 | Default workspace logo | `packages/twenty-front/src/modules/ui/navigation/navigation-drawer/constants/DefaultWorkspaceLogo.ts` | points at the 192px Trident icon |
 | Terms and privacy links | `packages/twenty-front/src/modules/auth/sign-in-up/components/FooterNote.tsx` | `trident-ai.dev/terms` and `/privacy` (no `.html`: it 301-redirects) |
 | Social-card meta | `packages/twenty-front/index.html` | og:image and twitter:image removed (they pointed at the Twenty card); `brand.mjs check` fails on any `twentyhq` or `twenty.com` in the file |
-| Theme colours (accent + dark surfaces) | `packages/twenty-ui/src/theme-constants/theme-light.css`, `theme-dark.css` (+ tracked copies in `packages/twenty-ui/dist/`) | edited by hand; see below |
+| Theme colours (accent, UI blue, dark surfaces, dark greys) | `packages/twenty-ui/src/theme-constants/theme-light.css`, `theme-dark.css` (+ tracked copies in `packages/twenty-ui/dist/`) | edited by hand; see below |
+| Text on filled blue buttons | `packages/twenty-ui/src/input/button/components/Button/Button.tsx` (2 lines), `AnimatedButton.tsx` (1 line) | `GRAY_SCALE_LIGHT.gray1` (always white) → `themeCssVariables.font.color.inverted` (white in light, near-black in dark), so dark text on gold is 8.53:1 |
 | Dark loading background | `packages/twenty-front/index.html` | `--theme-dark-background-tertiary: #2e1420` (mirrors dark background tertiary) |
 
 `packages/twenty-website` catalogs are deliberately not rebranded: that package is not deployed.
@@ -31,4 +32,12 @@ Accent aliases follow Twenty's own mapping in both themes: primary/secondary = s
 
 Dark surfaces: background primary `#1C0B12`, secondary `#26101A`, tertiary `#2E1420`, quaternary `#381927`.
 
-Not changed: the `color.blue*` family (primary buttons, focus borders, filter-chip text), font colours, grey scale, tags. Primary buttons therefore stay Twenty blue until that is decided separately.
+UI blue is the brand accent. `--t-color-blue`, `--t-color-blue1`–`12`, `--t-border-color-blue` (= step 7), `--t-buttons-secondary-text-color` (button hotkey hint: light step 7, dark step 6), `--t-snack-bar-info-color` (= step 9) use the same wine (light) and gold (dark) scales as the accent. `--t-background-transparent-blue`, `--t-snack-bar-info-background-color` and `--t-color-transparent-blue1`–`12` keep upstream's alpha byte with `#381927` (light) or `#D4AF37` (dark); upstream's two opaque dark steps (11, 12) take gold steps 11 and 12.
+
+Left as user data colours: `--t-tag-text-blue`, `--t-tag-background-blue`, `--t--illustration-icon-color-blue`, `--t--illustration-icon-fill-blue`.
+
+By-name side effects (accepted): `theme.color[name]` lookups resolve "blue" to the brand accent. An icon coloured "blue" in the IconPicker shows wine (light) or gold (dark); a placeholder avatar whose name hashes to "blue" (`stringToThemeColorP3String`) does the same.
+
+Dark greys lifted to reach 4.5:1 on every wine surface: `--t-font-color-tertiary` 0.506 → 0.6 (`#999999`), `--t-font-color-light` 0.4 → 0.541 (`#8A8A8A`). Light-theme greys are upstream.
+
+Not changed: font colours other than the two dark greys, grey scale, tags, red/green/orange families.
