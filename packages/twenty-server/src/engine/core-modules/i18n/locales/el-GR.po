@@ -3889,7 +3889,7 @@ msgstr ""
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Συμμετέχετε στην ομάδα σας στο Twenty"
+msgstr "Συμμετέχετε στην ομάδα σας στο Trident CRM"
 
 #. js-lingui-id: AQuLwi
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-version-standard-flat-field-metadata.util.ts
@@ -8079,7 +8079,7 @@ msgstr "Τετάρτη"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Καλώς ήρθατε στο Twenty: Παρακαλώ επιβεβαιώστε το email σας"
+msgstr "Καλώς ήρθατε στο Trident CRM: Παρακαλώ επιβεβαιώστε το email σας"
 
 #. js-lingui-id: OHlJ1X
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts

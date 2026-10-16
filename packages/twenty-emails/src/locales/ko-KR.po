@@ -50,7 +50,7 @@ msgstr "워크스페이스는 {remainingDays} {dayOrDays} 후에 비활성화되
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "If you wish to continue using Twenty, please update your subscription within the next {remainingDays} {dayOrDays}."
-msgstr "Twenty를 계속 사용하려면 다음 {remainingDays} {dayOrDays} 내에 구독을 업데이트하세요."
+msgstr "Trident CRM를 계속 사용하려면 다음 {remainingDays} {dayOrDays} 내에 구독을 업데이트하세요."
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -76,7 +76,7 @@ msgstr "테스트 이메일"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Twenty에서 팀에 합류하세요"
+msgstr "Trident CRM에서 팀에 합류하세요"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -126,7 +126,7 @@ msgstr "이 변경을 시작하지 않으셨다면 즉시 워크스페이스 소
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Twenty에 연결하세요"
+msgstr "Trident CRM에 연결하세요"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -171,7 +171,7 @@ msgstr "이 워크스페이스의 모든 데이터가 영구적으로 삭제되�
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you wish to use Twenty again, you can create a new workspace."
-msgstr "Twenty를 다시 사용하려면 새 워크스페이스를 생성하세요."
+msgstr "Trident CRM를 다시 사용하려면 새 워크스페이스를 생성하세요."
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
@@ -231,7 +231,7 @@ msgstr "트웬티의 개발자 문서 방문하기"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, 공익 법인"
+msgstr "Trident CRM.com, 공익 법인"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

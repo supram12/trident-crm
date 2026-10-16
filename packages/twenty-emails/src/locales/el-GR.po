@@ -50,7 +50,7 @@ msgstr "Ο χώρος εργασίας θα απενεργοποιηθεί σε 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "If you wish to continue using Twenty, please update your subscription within the next {remainingDays} {dayOrDays}."
-msgstr "Εάν επιθυμείτε να συνεχίστε να χρησιμοποιείτε το Twenty, παρακαλούμε ενημερώστε την συνδρομή σας εντός των επόμενων {remainingDays} {dayOrDays}."
+msgstr "Εάν επιθυμείτε να συνεχίστε να χρησιμοποιείτε το Trident CRM, παρακαλούμε ενημερώστε την συνδρομή σας εντός των επόμενων {remainingDays} {dayOrDays}."
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -76,7 +76,7 @@ msgstr "Δοκιμαστικό email"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Συμμετέχετε στην ομάδα σας στο Twenty"
+msgstr "Συμμετέχετε στην ομάδα σας στο Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -126,7 +126,7 @@ msgstr "Εάν δεν έχετε προβεί εσείς σε αυτήν την 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Συνδεθείτε στο Twenty"
+msgstr "Συνδεθείτε στο Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -171,7 +171,7 @@ msgstr "Όλα τα δεδομένα σε αυτόν τον χώρο εργασ�
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you wish to use Twenty again, you can create a new workspace."
-msgstr "Εάν επιθυμείτε να χρησιμοποιήσετε ξανά το Twenty, μπορείτε να δημιουργήσετε ένα νέο χώρο εργασίας."
+msgstr "Εάν επιθυμείτε να χρησιμοποιήσετε ξανά το Trident CRM, μπορείτε να δημιουργήσετε ένα νέο χώρο εργασίας."
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
@@ -181,7 +181,7 @@ msgstr "Δημιουργία νέου χώρου εργασίας"
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
 msgid "What is Twenty?"
-msgstr "Τι είναι το Twenty;"
+msgstr "Τι είναι το Trident CRM;"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
@@ -196,7 +196,7 @@ msgstr "Ιστοσελίδα"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Επισκεφτείτε την ιστοσελίδα του Twenty"
+msgstr "Επισκεφτείτε την ιστοσελίδα του Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -206,7 +206,7 @@ msgstr "Github"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Επισκεφτείτε το αποθετήριο του Twenty στο GitHub"
+msgstr "Επισκεφτείτε το αποθετήριο του Trident CRM στο GitHub"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -216,7 +216,7 @@ msgstr "Οδηγός Χρήστη"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Διαβάστε τον οδηγό χρήστη του Twenty"
+msgstr "Διαβάστε τον οδηγό χρήστη του Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -226,12 +226,12 @@ msgstr "Προγραμματιστές"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Επισκεφτείτε την τεκμηρίωση για προγραμματιστές του Twenty"
+msgstr "Επισκεφτείτε την τεκμηρίωση για προγραμματιστές του Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, Δημόσια Οφέλη Εταιρεία"
+msgstr "Trident CRM.com, Δημόσια Οφέλη Εταιρεία"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

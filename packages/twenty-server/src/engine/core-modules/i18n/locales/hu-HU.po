@@ -8079,7 +8079,7 @@ msgstr "Szerda"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Üdvözöljük a Twenty-ben: Kérjük, erősítse meg e-mail-címét"
+msgstr "Üdvözöljük a Trident CRM-ben: Kérjük, erősítse meg e-mail-címét"
 
 #. js-lingui-id: OHlJ1X
 #: src/engine/metadata-modules/page-layout-widget/utils/validate-widget-grid-position.util.ts

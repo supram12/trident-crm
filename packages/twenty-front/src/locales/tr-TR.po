@@ -2834,7 +2834,7 @@ msgstr "Gövde Girişi"
 #. js-lingui-id: 2yl5lQ
 #: src/pages/onboarding/internal/ChooseYourPlanContent.tsx
 msgid "Book a Call"
-msgstr "\"Twenty\"'yi kullanarak"
+msgstr "\"Trident CRM\"'yi kullanarak"
 
 #. js-lingui-id: d/yr35
 #: src/pages/onboarding/BookCallDecision.tsx
@@ -2955,7 +2955,7 @@ msgstr "{author} tarafından"
 #. js-lingui-id: 8Pfllj
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "By using Twenty, you agree to the"
-msgstr "Twenty'i kullanarak,"
+msgstr "Trident CRM'i kullanarak,"
 
 #. js-lingui-id: Yx41df
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
@@ -3373,7 +3373,7 @@ msgstr "Yeni e-posta adresinizi doğrulamak için gelen kutunuzu kontrol edin."
 #. js-lingui-id: SxwQE8
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 msgid "Checkout session error. Please retry or contact Twenty team"
-msgstr "Ödeme oturumu hatası. Lütfen tekrar deneyin veya Twenty ekibi ile iletişime geçin"
+msgstr "Ödeme oturumu hatası. Lütfen tekrar deneyin veya Trident CRM ekibi ile iletişime geçin"
 
 #. js-lingui-id: SviKkE
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
@@ -6801,7 +6801,7 @@ msgstr "Plan değişikliği iptalinde hata oluştu."
 #. js-lingui-id: QmR+2U
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
 msgid "Error while ending trial period. Please contact Twenty team."
-msgstr "Deneme süresi sona erdirilirken hata oluştu. Lütfen Twenty ekibiyle iletişime geçin."
+msgstr "Deneme süresi sona erdirilirken hata oluştu. Lütfen Trident CRM ekibiyle iletişime geçin."
 
 #. js-lingui-id: 5g78zo
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
@@ -12115,7 +12115,7 @@ msgstr "Sayfa Adı"
 #. js-lingui-id: NRvxzv
 #: src/pages/not-found/NotFound.tsx
 msgid "Page Not Found | Twenty"
-msgstr "Sayfa Bulunamadı | Twenty"
+msgstr "Sayfa Bulunamadı | Trident CRM"
 
 #. js-lingui-id: sF+Xp9
 #: src/pages/settings/security/event-logs/components/EventLogTableSelector.tsx
@@ -15395,7 +15395,7 @@ msgstr "Outlook ile Senkronize Et"
 #. js-lingui-id: +9x4tK
 #: src/pages/onboarding/SyncEmails.tsx
 msgid "Sync your Emails and Calendar with Twenty. Choose your privacy settings."
-msgstr "E-postalarınızı ve Takviminizi Twenty ile eşitleyin. Gizlilik ayarlarınızı seçin."
+msgstr "E-postalarınızı ve Takviminizi Trident CRM ile eşitleyin. Gizlilik ayarlarınızı seçin."
 
 #. js-lingui-id: N2FcBE
 #: src/modules/settings/accounts/components/SettingsAccountsConnectedAccountsRowRightContainer.tsx
@@ -16466,7 +16466,7 @@ msgstr "Turkuaz"
 #. js-lingui-id: JnaRPe
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
 msgid "Twenty fields"
-msgstr "Twenty alanları"
+msgstr "Trident CRM alanları"
 
 #. js-lingui-id: YIjS4q
 #: src/modules/ai/components/SettingsAgentModelCapabilities.tsx
@@ -17695,7 +17695,7 @@ msgstr ""
 #. js-lingui-id: nTuObL
 #: src/pages/auth/SignInUp.tsx
 msgid "Welcome to Twenty"
-msgstr "Twenty'e Hoş Geldiniz"
+msgstr "Trident CRM'e Hoş Geldiniz"
 
 #. js-lingui-id: t8ZvkC
 #: src/pages/auth/SignInUp.tsx

@@ -50,7 +50,7 @@ msgstr "Die werkruimte sal gedeaktiveer word in {remainingDays} {dayOrDays}, en 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "If you wish to continue using Twenty, please update your subscription within the next {remainingDays} {dayOrDays}."
-msgstr "As jy wil voortgaan om Twenty te gebruik, moet asseblief jou intekening binne die volgende {remainingDays} {dayOrDays} opdateer."
+msgstr "As jy wil voortgaan om Trident CRM te gebruik, moet asseblief jou intekening binne die volgende {remainingDays} {dayOrDays} opdateer."
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -76,7 +76,7 @@ msgstr "Toets e-pos"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Sluit aan by jou span op Twenty"
+msgstr "Sluit aan by jou span op Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -126,7 +126,7 @@ msgstr "As jy nie hierdie verandering geïnisieer het nie, kontak asseblief jou 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Konnekteer met Twenty"
+msgstr "Konnekteer met Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -171,7 +171,7 @@ msgstr "Alle data in hierdie werkruimte is permanent verwyder."
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you wish to use Twenty again, you can create a new workspace."
-msgstr "As jy Twenty weer wil gebruik, kan jy 'n nuwe werkruimte skep."
+msgstr "As jy Trident CRM weer wil gebruik, kan jy 'n nuwe werkruimte skep."
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
@@ -181,7 +181,7 @@ msgstr "Skep 'n nuwe werksruimte"
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
 msgid "What is Twenty?"
-msgstr "Wat is Twenty?"
+msgstr "Wat is Trident CRM?"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
@@ -196,7 +196,7 @@ msgstr "Webwerf"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Besoek Twenty se webwerf"
+msgstr "Besoek Trident CRM se webwerf"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -206,7 +206,7 @@ msgstr "Github"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Besoek Twenty se GitHub-bewaarplek"
+msgstr "Besoek Trident CRM se GitHub-bewaarplek"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -216,7 +216,7 @@ msgstr "Gebruikersgids"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Lees Twenty se gebruikersgids"
+msgstr "Lees Trident CRM se gebruikersgids"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -226,12 +226,12 @@ msgstr "Ontwikkelaars"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Besoek Twenty se ontwikkelaar dokumentasie"
+msgstr "Besoek Trident CRM se ontwikkelaar dokumentasie"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, Openbare Voordeelkorporasie"
+msgstr "Trident CRM.com, Openbare Voordeelkorporasie"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

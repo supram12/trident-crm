@@ -50,7 +50,7 @@ msgstr "工作区将在 {remainingDays} {dayOrDays} 后停用，其所有数据�
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "If you wish to continue using Twenty, please update your subscription within the next {remainingDays} {dayOrDays}."
-msgstr "如果您希望继续使用 Twenty，请在接下来的 {remainingDays} {dayOrDays} 内更新您的订阅。"
+msgstr "如果您希望继续使用 Trident CRM，请在接下来的 {remainingDays} {dayOrDays} 内更新您的订阅。"
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -76,7 +76,7 @@ msgstr "测试邮箱"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "加入您的团队，使用 Twenty"
+msgstr "加入您的团队，使用 Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -126,7 +126,7 @@ msgstr "如果您没有发起此更改，请立即联系您的工作区所有者
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "连接 Twenty"
+msgstr "连接 Trident CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -171,7 +171,7 @@ msgstr "此工作区中的所有数据已被永久删除。"
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you wish to use Twenty again, you can create a new workspace."
-msgstr "如果您想再次使用 Twenty，可以创建一个新工作区。"
+msgstr "如果您想再次使用 Trident CRM，可以创建一个新工作区。"
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
@@ -181,7 +181,7 @@ msgstr "创建新的工作区"
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
 msgid "What is Twenty?"
-msgstr "什么是 Twenty？"
+msgstr "什么是 Trident CRM？"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
@@ -196,7 +196,7 @@ msgstr "网站"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "访问 Twenty 的网站"
+msgstr "访问 Trident CRM 的网站"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -206,7 +206,7 @@ msgstr "Github"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "访问 Twenty 的 GitHub 仓库"
+msgstr "访问 Trident CRM 的 GitHub 仓库"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -216,7 +216,7 @@ msgstr "用户指南"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "阅读 Twenty 的用户指南"
+msgstr "阅读 Trident CRM 的用户指南"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -226,12 +226,12 @@ msgstr "开发者"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "访问 Twenty 的开发者文档"
+msgstr "访问 Trident CRM 的开发者文档"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com，公益公司"
+msgstr "Trident CRM.com，公益公司"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx

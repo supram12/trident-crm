@@ -44,9 +44,11 @@ COPY ./packages/twenty-shared /app/packages/twenty-shared
 COPY ./packages/twenty-client-sdk /app/packages/twenty-client-sdk
 COPY ./packages/twenty-server /app/packages/twenty-server
 
+COPY ./scripts/brand.mjs /app/scripts/brand.mjs
 RUN npx nx run twenty-server:lingui:extract && \
-    npx nx run twenty-server:lingui:compile && \
     npx nx run twenty-emails:lingui:extract && \
+    node scripts/brand.mjs apply && \
+    npx nx run twenty-server:lingui:compile && \
     npx nx run twenty-emails:lingui:compile
 
 RUN npx nx run twenty-server:build
@@ -67,7 +69,9 @@ COPY ./packages/twenty-ui /app/packages/twenty-ui
 COPY ./packages/twenty-shared /app/packages/twenty-shared
 COPY ./packages/twenty-sdk /app/packages/twenty-sdk
 COPY ./packages/twenty-client-sdk /app/packages/twenty-client-sdk
+COPY ./scripts/brand.mjs /app/scripts/brand.mjs
 RUN npx nx run twenty-front:lingui:extract && \
+    node scripts/brand.mjs apply && \
     npx nx run twenty-front:lingui:compile
 # To skip the memory-intensive frontend build, pre-build on the host:
 #   npx nx build twenty-front
