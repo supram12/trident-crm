@@ -15,6 +15,11 @@ Re-verify after every upstream merge: `node scripts/brand.mjs apply && node scri
 | Theme colours (accent, UI blue, dark surfaces, dark greys) | `packages/twenty-ui/src/theme-constants/theme-light.css`, `theme-dark.css` (+ tracked copies in `packages/twenty-ui/dist/`) | edited by hand; see below |
 | Text on filled blue surfaces | `packages/twenty-ui/src/input/button/components/Button/Button.tsx` (2 lines), `AnimatedButton.tsx` (1 line), `packages/twenty-ui/src/navigation/notification-counter/components/NotificationCounter.tsx`, `packages/twenty-front/src/modules/layout-customization/components/LayoutCustomizationBar.tsx` + `LayoutCustomizationBarMenuDropdown.tsx` | `GRAY_SCALE_LIGHT.gray1` / `'white'` (always white) → `themeCssVariables.font.color.inverted` (white in light, near-black in dark), so dark text on gold is 8.53:1 |
 | Dark loading background | `packages/twenty-front/index.html` | `--theme-dark-background-tertiary: #2e1420` (mirrors dark background tertiary) |
+| Documentation link | `packages/twenty-shared/src/constants/DocumentationBaseUrl.ts` | `https://trident-ai.dev` (no Trident docs yet) |
+| Settings → Community cards | `packages/twenty-front/src/pages/settings/community/SettingsCommunity.tsx` | Partners → trident-ai.dev, Support → trident-ai.dev/#contact (was Twenty's Discord), Releases → github.com/supram12/trident-crm/releases |
+| Admin Panel version | `SettingsAdminVersionDisplay.tsx`, `admin-panel-version.service.ts` | link → our GitHub releases; "latest version" = current, no call to Twenty's Docker Hub |
+| Login / 404 backdrop | `DefaultLayout.tsx`, `NotFound.tsx` | upstream `sign-in-background-mock` (demo workspace, "Tim Apple", Rockets/Pets) no longer rendered; the module stays for merges |
+| save() update events (bug fix, not branding) | `packages/twenty-server/src/engine/twenty-orm/entity-manager/workspace-entity-manager.ts` | `after` = stored row merged with the partial payload. Upstream emits only the partial, so `WorkspaceMemberAvatarFileDeletionListener` deleted the profile picture on every theme/locale change. Re-check after each upstream merge: upload an avatar, switch theme, avatar must still load. |
 
 `packages/twenty-website` catalogs are deliberately not rebranded: that package is not deployed.
 

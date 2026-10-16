@@ -13,6 +13,11 @@ Script it (`scripts/new-client.sh`) at client #2; until then follow these steps.
 | `Redis` | `railway add --database redis` | Default policy is `noeviction`, which Twenty needs. |
 | bucket `crm-files` | `railway bucket create crm-files --region ams` | File storage. Server and worker can't share a volume, so files go here. |
 
+Current image: `v2.9.0-trident.3` (16 Oct 2026). A `startCommand` set via the
+API only takes effect on the **next deployment**: after setting it, redeploy the
+worker and confirm its logs show the queue worker, not `Mapped {/rest/...}`
+routes (the Admin Panel → Health tab shows "Worker: Outage" when it is wrong).
+
 **Never deploy `v2.9.0-trident.1`** — it is upstream's all-in-one dev image (embedded Postgres, dev secret).
 
 ## Steps
