@@ -9,7 +9,7 @@ Script it (`scripts/new-client.sh`) at client #2; until then follow these steps.
 |---|---|---|
 | `server` | `ghcr.io/supram12/trident-crm:v2.9.0-trident.N` | Domain on port 3000. Runs DB migrations + cron registration on boot. |
 | `worker` | same image | Start command `node dist/queue-worker/queue-worker`. |
-| `Postgres` | `railway add --database postgres` | Turn on daily backups in the dashboard. |
+| `Postgres` | `railway add --database postgres` | Backup schedules need a Railway **Pro** workspace. Trident's pilot runs on Hobby with no backups (Ash's call, 16 Oct). Settle this per client before go-live. |
 | `Redis` | `railway add --database redis` | Default policy is `noeviction`, which Twenty needs. |
 | bucket `crm-files` | `railway bucket create crm-files --region ams` | File storage. Server and worker can't share a volume, so files go here. |
 
