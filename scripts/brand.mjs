@@ -42,6 +42,8 @@ const CHECKS = [
     const html = readFileSync(join(ROOT, 'packages/twenty-front/index.html'), 'utf8');
     return /<title>Twenty|content="Twenty"|open-source CRM/.test(html) ? ['packages/twenty-front/index.html'] : [];
   }],
+  ['index.html has no Twenty assets', () => /twentyhq|twenty\.com/.test(readFileSync(join(ROOT, 'packages/twenty-front/index.html'), 'utf8'))
+    ? ['packages/twenty-front/index.html'] : []],
   ['manifest name', () => /Twenty/.test(readFileSync(join(ROOT, 'packages/twenty-front/public/manifest.json'), 'utf8'))
     ? ['packages/twenty-front/public/manifest.json'] : []],
   ['default workspace logo', () => /twenty-logo/.test(readFileSync(join(ROOT,

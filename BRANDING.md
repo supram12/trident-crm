@@ -11,6 +11,7 @@ Re-verify after every upstream merge: `node scripts/brand.mjs apply && node scri
 | PWA name, theme and background colour | `packages/twenty-front/public/manifest.json` | edited by hand (`#1C0B12`) |
 | Default workspace logo | `packages/twenty-front/src/modules/ui/navigation/navigation-drawer/constants/DefaultWorkspaceLogo.ts` | points at the 192px Trident icon |
 | Terms and privacy links | `packages/twenty-front/src/modules/auth/sign-in-up/components/FooterNote.tsx` | `trident-ai.dev/terms` and `/privacy` (no `.html`: it 301-redirects) |
+| Social-card meta | `packages/twenty-front/index.html` | og:image and twitter:image removed (they pointed at the Twenty card); `brand.mjs check` fails on any `twentyhq` or `twenty.com` in the file |
 
 `packages/twenty-website` catalogs are deliberately not rebranded: that package is not deployed.
 
