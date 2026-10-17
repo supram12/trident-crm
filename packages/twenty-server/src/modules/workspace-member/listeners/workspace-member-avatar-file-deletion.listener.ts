@@ -31,17 +31,6 @@ export class WorkspaceMemberAvatarFileDeletionListener {
   ) {
     const fileIdsToDelete = this.getFileIdsToDeleteFromUpdateEvent(payload);
 
-    // shortcut: diagnostic for the vanishing-avatar bug, remove once understood
-    console.warn(
-      `[trident] member UPDATED ${JSON.stringify(
-        payload.events.map((e) => ({
-          before: e.properties.before.avatarUrl,
-          after: e.properties.after.avatarUrl,
-          updatedFields: e.properties.updatedFields,
-        })),
-      )} -> delete ${JSON.stringify(fileIdsToDelete)}`,
-    );
-
     await this.deleteCorePictures(fileIdsToDelete, payload.workspaceId);
   }
 
@@ -87,13 +76,7 @@ export class WorkspaceMemberAvatarFileDeletionListener {
       .map((event) => {
         const beforeAvatarUrl = event.properties.before.avatarUrl;
 
-        // Only a string in `after` is a real change; a partial update that did
-        // not touch avatarUrl reaches here as undefined or null and must not
-        // delete the current picture.
-        if (
-          !isDefined(beforeAvatarUrl) ||
-          typeof event.properties.after.avatarUrl !== 'string'
-        ) {
+        if (!isDefined(beforeAvatarUrl)) {
           return undefined;
         }
 

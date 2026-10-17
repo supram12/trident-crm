@@ -1296,20 +1296,21 @@ export class WorkspaceEntityManager extends EntityManager {
         this.internalContext.flatFieldMetadataMaps,
       );
 
-      // save() receives a partial; merge it over the stored row so the UPDATED
-      // event's `after` is complete (listeners read fields the save didn't touch,
-      // e.g. the avatar listener deleted the picture on every settings change).
-      const updatedEntities = formattedResult
+      // The persisted entity carries column defaults for fields the caller did
+      // not pass (a partial save), so re-read the rows for the UPDATED event's
+      // `after`, like the update query builder does. Otherwise listeners see
+      // e.g. avatarUrl reset to '' on a theme change and delete the picture.
+      const updatedIds = formattedResult
         .filter((entity) => beforeUpdateMapById[entity.id])
-        .map(
-          (entity) =>
-            ({
-              ...beforeUpdateMapById[entity.id],
-              ...Object.fromEntries(
-                Object.entries(entity).filter(([, v]) => v !== undefined),
-              ),
-            }) as Entity,
-        );
+        .map((entity) => entity.id);
+      const updatedEntities =
+        updatedIds.length > 0
+          ? await this.find(
+              entityTarget,
+              { where: { id: In(updatedIds) } },
+              { shouldBypassPermissionChecks: true }, // event emission only
+            )
+          : [];
       const createdEntities = formattedResult.filter(
         (entity) => !beforeUpdateMapById[entity.id],
       );
