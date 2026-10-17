@@ -76,10 +76,12 @@ export class WorkspaceMemberAvatarFileDeletionListener {
       .map((event) => {
         const beforeAvatarUrl = event.properties.before.avatarUrl;
 
-        // A partial update that did not touch avatarUrl is not a removal.
+        // Only a string in `after` is a real change; a partial update that did
+        // not touch avatarUrl reaches here as undefined or null and must not
+        // delete the current picture.
         if (
           !isDefined(beforeAvatarUrl) ||
-          event.properties.after.avatarUrl === undefined
+          typeof event.properties.after.avatarUrl !== 'string'
         ) {
           return undefined;
         }
