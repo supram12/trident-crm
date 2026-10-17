@@ -31,6 +31,17 @@ export class WorkspaceMemberAvatarFileDeletionListener {
   ) {
     const fileIdsToDelete = this.getFileIdsToDeleteFromUpdateEvent(payload);
 
+    // shortcut: diagnostic for the vanishing-avatar bug, remove once understood
+    console.warn(
+      `[trident] member UPDATED ${JSON.stringify(
+        payload.events.map((e) => ({
+          before: e.properties.before.avatarUrl,
+          after: e.properties.after.avatarUrl,
+          updatedFields: e.properties.updatedFields,
+        })),
+      )} -> delete ${JSON.stringify(fileIdsToDelete)}`,
+    );
+
     await this.deleteCorePictures(fileIdsToDelete, payload.workspaceId);
   }
 

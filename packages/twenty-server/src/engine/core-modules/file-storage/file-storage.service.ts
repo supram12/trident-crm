@@ -261,6 +261,10 @@ export class FileStorageService {
   }
 
   async deleteFile(params: ResourceIdentifier): Promise<void> {
+    // shortcut: diagnostic for the vanishing-avatar bug, remove once the caller is known
+    console.warn(
+      `[trident] deleteFile ${params.fileFolder}/${params.resourcePath}\n${new Error().stack}`,
+    );
     const driver = this.fileStorageDriverFactory.getCurrentDriver();
     const { onStorageFilePath, filePath } =
       this.validateAndBuildFileStoragePathOrThrow(params);

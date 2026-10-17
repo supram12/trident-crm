@@ -177,6 +177,10 @@ export class FileCorePictureService {
     fileId: string;
     workspaceId: string;
   }): Promise<void> {
+    // shortcut: diagnostic for the vanishing-avatar bug, remove once the caller is known
+    console.warn(
+      `[trident] deleteCorePicture ${fileId} ${workspaceId}\n${new Error().stack}`,
+    );
     const file = await this.fileRepository.findOneOrFail(workspaceId, {
       where: {
         id: fileId,
